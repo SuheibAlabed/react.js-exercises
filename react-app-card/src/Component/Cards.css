@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap");
+:root {
+  --background-card: #fff;
+  --color: #333;
+  --font-text: "Source Sans Pro", sans-serif;
+  --Social-Icon-bg: #b3e5fb;
+  --Social-Icon-bg-hover: #fbc9b3;
+  --Icon: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  text-align: center;
+}
+
+body a {
+  text-decoration: none;
+  color: var(--Icon);
+}
+
+.Container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 1rem;
+}
+
+.Card {
+  width: 25rem;
+  height: 36rem;
+  overflow: hidden;
+  margin: 5rem auto;
+  -webkit-box-shadow: 0 0 15px 5px #b2b2b2;
+          box-shadow: 0 0 15px 5px #b2b2b2;
+  border-radius: 30px;
+  text-align: center;
+  font-family: var(--font-text);
+}
+
+.Card .Cover {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.Card .Cover img {
+  height: 90%;
+  width: 100%;
+}
+
+.Card .Cover .EditBtn {
+  position: absolute;
+  top: 0;
+  z-index: 4;
+  color: white;
+  margin: 1.5rem 3rem 0 0;
+  right: 0;
+}
+
+.Card .Cover .EditBtn :hover {
+  cursor: pointer;
+  color: #ccc;
+}
+
+.Card .Cover .PFP {
+  position: absolute;
+  bottom: 0;
+  margin: -3rem 7rem;
+  text-align: center;
+  width: 170px;
+  height: 170px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.Card .Cover .PFP img {
+  width: 180px;
+  height: 250px;
+}
+
+.Card .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem;
+}
+
+.Card .info h1 {
+  font-weight: 400;
+}
+
+.Card .info h2 {
+  font-weight: 200;
+  margin-bottom: 1.5rem;
+}
+
+.Card .info .SocialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Card .info .SocialMedia .Media {
+  width: 3rem;
+  height: 3rem;
+  background: var(--Social-Icon-bg);
+  border-radius: 4rem;
+  margin: 1rem 2rem 0 2rem;
+  padding-top: 0.6rem;
+  color: var(--Icon);
+}
+
+.Card .info .SocialMedia :hover {
+  cursor: pointer;
+  background: var(--Social-Icon-bg-hover);
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+/*# sourceMappingURL=Cards.css.map */
